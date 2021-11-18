@@ -5,13 +5,21 @@
     android:layout_height="match_parent"
     tools:context=".DrawingFragment">
 
-    // Create Recycle view to show pictures for drawing
-    <androidx.recyclerview.widget.RecyclerView
-    android:id="@+id/open_your_recipe_recycle_view"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    </androidx.recyclerview.widget.RecyclerView>
 
+    <TextView
+        android:id="@+id/demotext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
+        android:text="@string/demo_text" />
+
+    <Button
+        android:id="@+id/back_picfragment_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/backButton" />
 
 
 </FrameLayout>

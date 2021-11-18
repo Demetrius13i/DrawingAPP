@@ -1,6 +1,7 @@
 package com.dmitryi.example.drawingproject
 
 
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.Paint
 import android.graphics.Path
@@ -33,6 +34,13 @@ class MainActivity : AppCompatActivity() {
 
         bottomNavigationMenu = findViewById(R.id.bottom_navigation_menu)
 
+        val intent = Intent(Intent.ACTION_SEND)
+        intent.type="text/plain"
+        intent.putExtra(
+            Intent.EXTRA_TEXT,
+            "Привет! Хочу поделиться классным приложением. Посмотри!"
+        )
+
         bottomNavigationMenu.setOnItemSelectedListener { item ->
             var fragment: Fragment? = null
             when (item.itemId) {
@@ -40,10 +48,11 @@ class MainActivity : AppCompatActivity() {
                     fragment = DrawingFragment()
                 }
                 R.id.brush_size -> {
-                    fragment = BrushSizeFragment()
+                    //on demo-verison nonrealise
                 }
                 R.id.share_app -> {
-                    fragment = ShareFragment()
+                    val chooser= Intent.createChooser(intent, "Поделиться")
+                    startActivity(chooser)
                 }
             }
             replaceFragment(fragment!!)
