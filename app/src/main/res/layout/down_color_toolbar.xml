@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <GridLayout
+        android:id="@+id/gridColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/down_toolbar_background"
+        android:columnCount="5"
+        android:orientation="horizontal"
+        android:rowCount="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <ImageButton
+            android:id="@+id/redColor"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/red_background" />
+
+        <ImageButton
+            android:id="@+id/grayColor"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/gray_background" />
+
+        <ImageButton
+            android:id="@+id/yellowColor"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/yellow_background" />
+
+        <ImageButton
+            android:id="@+id/greenColor"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/green_background" />
+
+        <ImageButton
+            android:id="@+id/blueColor"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/blue_background" />
+
+        <ImageButton
+            android:id="@+id/darkBlueColor"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/dark_blue_background" />
+
+        <ImageButton
+            android:id="@+id/violetColor"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/violet_background" />
+
+        <ImageButton
+            android:id="@+id/whiteColor"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/eraser_icon" />
+
+        <ImageButton
+            android:id="@+id/blackColor"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/black_background" />
+
+        <ImageButton
+            android:id="@+id/eraser"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/white_background"
+            />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

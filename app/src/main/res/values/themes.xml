@@ -12,5 +12,10 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="android:textViewStyle">@style/Theme.DrawingProject.TextView</item>
+    </style>
+
+    <style name="Theme.DrawingProject.TextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">15sp</item>
     </style>
 </resources>

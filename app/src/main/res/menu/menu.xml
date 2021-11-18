@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/drawing"
+        android:title="@string/drawing"
+        android:icon="@drawable/open_picture"
+        />
+    <item
+        android:id="@+id/brush_size"
+        android:title="@string/brush_size"
+        android:icon="@drawable/brush"
+
+        />
+    <item
+        android:id="@+id/share_app"
+        android:title="@string/share"
+        android:icon="@drawable/share"
+        />
+
+</menu>
