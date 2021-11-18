@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DrawingFragment">
 
 
-    <TextView
-        android:id="@+id/demotext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="40dp"
-        android:text="@string/demo_text" />
-
-    <Button
-        android:id="@+id/back_picfragment_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/backButton" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/picRecycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/three_minions" />
 
 
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

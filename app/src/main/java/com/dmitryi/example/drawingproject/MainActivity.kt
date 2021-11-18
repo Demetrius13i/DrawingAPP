@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
                     fragment = DrawingFragment()
                 }
                 R.id.brush_size -> {
-                    //on demo-verison nonrealise
+                    //on demo-verison not realise
                 }
                 R.id.share_app -> {
                     val chooser= Intent.createChooser(intent, "Поделиться")
