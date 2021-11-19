@@ -9,7 +9,7 @@ class PicAdapter(private val picList: List<Int>) : RecyclerView.Adapter<PicViewH
 
         val picItemView =
             LayoutInflater.from(parent.context)
-                .inflate(R.layout.pic_list_item, parent)
+                .inflate(R.layout.pic_list_item, parent, false)
 
 
         return PicViewHolder(picItemView)

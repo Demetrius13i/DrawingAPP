@@ -46,6 +46,8 @@ class MainActivity : AppCompatActivity() {
             when (item.itemId) {
                 R.id.drawing -> {
                     fragment = DrawingFragment()
+                    replaceFragment(fragment)
+
                 }
                 R.id.brush_size -> {
                     //on demo-verison not realise
@@ -55,7 +57,7 @@ class MainActivity : AppCompatActivity() {
                     startActivity(chooser)
                 }
             }
-            replaceFragment(fragment!!)
+
             true
         }
         bottomNavigationMenu.selectedItemId =
